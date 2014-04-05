@@ -42,3 +42,9 @@ Planned Features
 
 - "catchup" feature (as implemented in git-ftp)
 - maybe SFTP, FTPS, FTPES support
+
+I also plan to:
+- Port remote-deploy to PHP 5.3 namespaces and remove the Java-like "import" function (and use PSR-0 autoloading)
+- De-couple the "ConsoleUtil" (define an API and inject something like a "StdoutPrinter")
+- Change cmdline syntax to specify the target as an URL - maybe it is also easier to implement other protocols by
+  directly using PHP streams instead of PHP's ftp functions
